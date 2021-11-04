@@ -1,6 +1,7 @@
 const {Sequelize, Model, DataTypes} = require("sequelize");
 
-const sequelize = new Sequelize('db', 'user', 'pass', {
+const sequelize = new Sequelize('db', 'username', 'password', {
+    connectionLimit : 10000,
     host: 'host',
     dialect: 'mysql',
     pool: {

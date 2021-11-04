@@ -12,6 +12,9 @@ const usuarios = sequelize.define('usuarios',{
     },
     password: {
         type: DataTypes.STRING
+    },
+    rfc: {
+        type: DataTypes.STRING
     }
 },{
     tableName: 'usuarios',

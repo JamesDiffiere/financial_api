@@ -7,6 +7,9 @@ const bankOwners = sequelize.define('belvo_owners',{
         type: DataTypes.INTEGER,
         autoIncrement: true
     },
+    id_cliente: {
+        type: DataTypes.STRING
+    },
     link: {
         type: DataTypes.STRING
     },

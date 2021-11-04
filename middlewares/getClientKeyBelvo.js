@@ -12,8 +12,6 @@ const clientKeyBelvo = async (req)=>{
             SecretKeyPass,
             env
             );
-
-    
         //Get ClientKey 
         await client.connect()
         .then(async function () {
@@ -29,6 +27,7 @@ const clientKeyBelvo = async (req)=>{
                 
             })
             .catch(function (error) {
+                console.log(error);
                 resolve(error);
             });
         });

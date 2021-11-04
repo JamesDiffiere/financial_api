@@ -7,6 +7,9 @@ const bankTransactions = sequelize.define('belvo_transactions',{
         type: DataTypes.INTEGER,
         autoIncrement: true
     },
+    id_cliente: {
+        type: DataTypes.INTEGER
+    },
     id_account: {
         type: DataTypes.INTEGER
     },

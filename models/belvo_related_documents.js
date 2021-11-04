@@ -7,6 +7,9 @@ const related_documents = sequelize.define('belvo_related_documents',{
         type: DataTypes.INTEGER,
         autoIncrement: true
     },
+    id_cliente: {
+        type: DataTypes.INTEGER
+    },
     id_payments: {
         type: DataTypes.INTEGER
     },
